@@ -14,7 +14,7 @@ public class Moyenne {
      * @param notes
      * @return double // La moyenne de l'élève
      */
-    private static double calculerMoyenne(double[] notes) {
+ public static double calculerMoyenne(double[] notes) {
         double moyenne =0;
         for(double note: notes) {
             moyenne += note;
@@ -34,6 +34,7 @@ public class Moyenne {
         }
 
     }
+
 
 
 }
