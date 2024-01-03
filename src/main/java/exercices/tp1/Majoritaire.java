@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Majoritaire {
+
     /**
      * Retourne le nombre majoritaire d'un tableau qui en contient un
      * Un élément est majoritaire s'il apparaît plus de n/2 fois dans le tableau

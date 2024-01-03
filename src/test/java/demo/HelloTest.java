@@ -1,3 +1,5 @@
+package demo;
+
 import demo.Hello;
 import org.junit.jupiter.api.Test;
 
