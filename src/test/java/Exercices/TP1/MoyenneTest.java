@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MoyenneTest {
 
+    double[] notes = { 14, 16, 12 };
     //Arrange
     private Moyenne moyenne;
     @BeforeEach
@@ -20,7 +21,6 @@ public class MoyenneTest {
     @Test
     @DisplayName("Test calcul de la moyenne")
     public void testMoyenne() {
-        double[] notes = { 14, 16, 12 };
         //Arrange
         //Moyenne moyenne = new Moyenne();
         //Act
@@ -32,13 +32,14 @@ public class MoyenneTest {
     @Test
     @DisplayName("Test vérification des notes")
     public void testVerifierNotes() {
-        double[] notes = { 14, 16, 12 };
         double result = moyenne.verifierSiNotesComprisesEntreOet20(notes);
 
         assertEquals(0, result);
     }
 
-   
+    
+
+
 
 
 
