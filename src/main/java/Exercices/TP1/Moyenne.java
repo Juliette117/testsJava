@@ -5,7 +5,7 @@ public class Moyenne {
     public double getMoyenne(double[] notes) {
 
         this.verifierSiNotesComprisesEntreOet20(notes);
-        this.verifierTaille(notes);
+        this.verifierNombreDeNotes(notes);
 
         return this.calculerMoyenne(notes);
     }
@@ -21,10 +21,11 @@ public class Moyenne {
 
         return 0;
     }
-    private void verifierTaille(double[] notes) {
+    public double verifierNombreDeNotes(double[] notes) {
         if (notes.length != 3) {
             throw new IllegalArgumentException("Le carnet de notes doit contenir 3 notes");
         }
+        return 0;
     }
 
     /**

@@ -4,13 +4,14 @@ import Exercices.TP1.Moyenne;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MoyenneTest {
 
-    double[] notes = { 14, 16, 12 };
+    double[] notesMoyenne = { 14, 16, 12 };
+    double[] notesIncorrectes = { 14, 16, -2, 21 };
+    double[] nombreNotes = { 14, 16, 12, 10 };
     //Arrange
     private Moyenne moyenne;
     @BeforeEach
@@ -24,7 +25,7 @@ public class MoyenneTest {
         //Arrange
         //Moyenne moyenne = new Moyenne();
         //Act
-        double result = moyenne.getMoyenne(notes);
+        double result = moyenne.getMoyenne(notesMoyenne);
         //Assert
         assertEquals(14.0, result);
     }
@@ -32,12 +33,18 @@ public class MoyenneTest {
     @Test
     @DisplayName("Test vérification des notes")
     public void testVerifierNotes() {
-        double result = moyenne.verifierSiNotesComprisesEntreOet20(notes);
-
-        assertEquals(0, result);
+        assertThrows(IllegalArgumentException.class, () -> moyenne.verifierSiNotesComprisesEntreOet20(notesIncorrectes));
     }
 
-    
+    @Test
+    @DisplayName("Test vérification nombre de notes")
+    public void testVerifierNombreDeNotes() {
+        assertThrows(IllegalArgumentException.class, () -> moyenne.verifierNombreDeNotes(nombreNotes));
+
+
+
+
+    }
 
 
 
