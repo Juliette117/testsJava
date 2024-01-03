@@ -1,6 +1,5 @@
 package Exercices.TP1;
 
-import Exercices.TP1.Moyenne;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -40,15 +39,7 @@ public class MoyenneTest {
     @DisplayName("Test vérification nombre de notes")
     public void testVerifierNombreDeNotes() {
         assertThrows(IllegalArgumentException.class, () -> moyenne.verifierNombreDeNotes(nombreNotes));
-
-
-
-
     }
-
-
-
-
 
 
 }
