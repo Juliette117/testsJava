@@ -2,6 +2,7 @@ package exercices.tp1;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -19,12 +20,12 @@ class PalindromeTest {
 
     @ParameterizedTest
     @DisplayName("Test vérification si le nombre est un palindrome")
-    @ValueSource(ints = {101, 202,21 })
+    @ValueSource(ints = {11, 212, 242 })
     public void testVerifierSiPalindrome(int nombre) {
             //Act
             boolean result = palindrome.estUnPalindrome(nombre);
             //Assert
-            assertEquals(true, result);
+            assertTrue(result);
         }
 
     }
