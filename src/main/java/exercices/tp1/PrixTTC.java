@@ -32,10 +32,11 @@ public class PrixTTC {
      * Vérifie que le prix HT est positif
      * @param prixHt Prix HT
      */
-    private void verifierPrix(int prixHt) {
+    public double verifierPrix(int prixHt) {
         if (prixHt < 0) {
             throw new IllegalArgumentException("Le prix HT doit être positif");
         }
+        return 0;
     }
 
 }

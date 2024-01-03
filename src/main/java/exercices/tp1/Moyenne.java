@@ -1,13 +1,13 @@
-package Exercices.TP1;
+package exercices.tp1;
 
 public class Moyenne {
 
     public double getMoyenne(double[] notes) {
 
-        this.verifierSiNotesComprisesEntreOet20(notes);
-        this.verifierNombreDeNotes(notes);
+        verifierSiNotesComprisesEntreOet20(notes);
+        verifierNombreDeNotes(notes);
 
-        return this.calculerMoyenne(notes);
+        return calculerMoyenne(notes);
     }
 
     public double verifierSiNotesComprisesEntreOet20(double[] notes) throws IllegalArgumentException {
