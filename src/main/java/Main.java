@@ -6,7 +6,7 @@ public class Main {
 
         double[] notes = { 14, 16, 12 };
 
-        System.out.println(Moyenne.getMoyenne((notes)));
+        //System.out.println(Moyenne.getMoyenne((notes)));
 
 
     }
