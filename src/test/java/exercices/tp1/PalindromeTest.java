@@ -28,5 +28,25 @@ class PalindromeTest {
             assertTrue(result);
         }
 
+    @ParameterizedTest
+    @DisplayName("Test vérification si le nombre est un palindrome")
+    @ValueSource(ints = {10, 21, 24 })
+    public void testVerifierSiPasUnPalindrome(int nombre) {
+        //Act
+        boolean result = palindrome.estUnPalindrome(nombre);
+        //Assert
+        assertFalse(result);
     }
+
+    @Test
+    public void should_throw_when_less_than_10() {
+        assertThrows(
+                IllegalArgumentException.class,
+                ()-> palindrome.estUnPalindrome(1)
+        );
+
+    }
+
+
+}
 
