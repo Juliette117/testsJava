@@ -35,7 +35,7 @@ public class Salaire {
         if (heures > HEURES_TRAVAILLEES) {
             double salaire = 0;
             salaire += HEURES_TRAVAILLEES * this.tauxHoraire;
-            salaire += (heures - HEURES_TRAVAILLEES) * this.tauxHoraire * 1.5;
+            salaire += (heures - HEURES_TRAVAILLEES) * this.tauxHoraire * 0.25;
 
             return salaire;
         } else {
