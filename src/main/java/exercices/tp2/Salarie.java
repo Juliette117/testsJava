@@ -21,12 +21,16 @@ public abstract class Salarie {
 
     /**
      * Le salarié déménage
-     * @param adresse Adresse - Changement d'adresse
+     * @param adresse Adresse
      */
     public void demenager(Adresse adresse) {
         this.identite.setAdresse(adresse);
     }
 
+    /**
+     * Le salaire du salarie augmente selon le pourcentage
+     * @param pourcentage
+     */
     public void augmenter(double pourcentage) {
         this.salaire.setTauxHoraire(pourcentage);
 
