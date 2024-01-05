@@ -2,9 +2,9 @@ package exercices.tp2;
 
 public abstract class Salarie {
 
-    private final Salaire salaire;
+    private Salaire salaire;
 
-    private final Identite identite;
+    private Identite identite;
 
     public Salarie(Salaire salaire, Identite identite) {
         this.salaire = salaire;
