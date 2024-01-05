@@ -33,11 +33,16 @@ public abstract class Salarie {
      * @param heures
      * @return
      */
-    public String travailler(double heures) {
+    public String phraseTravailler(double heures) {
+
+        return  "Le salarié " + this.identite.getPrenom() + " " + this.identite.getNom() + " a travaillé " + heures + " heures " + "et a perçu " + this.salaire.payer(heures) + " euros.";
+    }
+
+    public void travailler(double heures) {
+        double salaire = this.salaire.payer(heures);
         System.out.println(
                 "Le salarié " + this.identite.getPrenom() + " " + this.identite.getNom() + " a travaillé " + heures + " heures " + "et a perçu " + this.salaire.payer(heures) + " euros."
         );
-        return  "Le salarié " + this.identite.getPrenom() + " " + this.identite.getNom() + " a travaillé " + heures + " heures " + "et a perçu " + this.salaire.payer(heures) + " euros.";
     }
 
     /** Méthode travailler() sans paramètres
@@ -64,7 +69,10 @@ public abstract class Salarie {
      * @return
      */
     public void augmenter(double pourcentage) {
-        this.salaire.setTauxHoraire(this.salaire.getTauxHoraire() * (pourcentage/100));
+        double augmentation = this.salaire.getTauxHoraire() * pourcentage/100;
+        double nouveauSalaire = this.salaire.getTauxHoraire() + augmentation;
+
+        this.salaire.setTauxHoraire(nouveauSalaire);
 
 
     }
