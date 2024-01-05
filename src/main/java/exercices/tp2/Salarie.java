@@ -2,9 +2,9 @@ package exercices.tp2;
 
 public abstract class Salarie {
 
-    protected Salaire salaire;
+    private final Salaire salaire;
 
-    protected Identite identite;
+    private final Identite identite;
 
     public Salarie(Salaire salaire, Identite identite) {
         this.salaire = salaire;
@@ -46,10 +46,8 @@ public abstract class Salarie {
      * @param adresse Adresse
      * @return
      */
-    public String demenager(Adresse adresse) {
+    public void demenager(Adresse adresse) {
         this.identite.setAdresse(adresse);
-
-        return null;
     }
 
     /**
