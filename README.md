@@ -7,7 +7,7 @@ Exercice pour apprendre à utiliser les mocks\
 C'est pas fini :scream_cat:
 
 &nbsp;
-#### Consignes ⚙️\
+#### Consignes ⚙️
 Vous devez utiliser JUnit 5 pour les tests unitaires\
 Vous devez utiliser Mockito pour les mocks\
 Vous devez utiliser Maven pour gérer les dépendances et les tests\
