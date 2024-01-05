@@ -76,6 +76,7 @@ Le package tp2 dans 'test/java/exercices/tp2' contient les tests pour les classe
 &nbsp;
 #### Outils utilisés
 
+IDE IntelliJ IDEA\
 Le TP a été réalisé à l'aide de JUnit 5 pour passer les tests unitaires et Mockito pour créer les mocks.\
 La gestion des dépendances se fait à l'aide de Maven.
 
@@ -90,6 +91,7 @@ _Pour lancer les tests avec coverage :_\
 _- Clic droit sur le package tp2 qui se situe dans 'main/java/exercices/tp2'_\
 _- Sélectionner 'More Run/Debug' > 'Run 'Test in 'exercices/tp2" with Coverage'_
 
+_Il n'y a rienà tester dans la classe 'Adresse' et 'Indentite', il n'y a pas de logique_
 
 
 
