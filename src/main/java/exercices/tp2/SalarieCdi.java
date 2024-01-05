@@ -7,6 +7,4 @@ public class SalarieCdi extends Salarie {
     }
 
 
-
-
 }
