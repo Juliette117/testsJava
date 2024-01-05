@@ -76,7 +76,7 @@ Le package tp2 dans 'test/java/exercices/tp2' contient les tests pour les classe
 &nbsp;
 #### Outils utilisés
 
-Le TP a été réalisé à l'aide de JUnit pour passer les tests unitaires et Mockito pour créer les mocks.\
+Le TP a été réalisé à l'aide de JUnit 5 pour passer les tests unitaires et Mockito pour créer les mocks.\
 La gestion des dépendances se fait à l'aide de Maven.
 
 &nbsp;
