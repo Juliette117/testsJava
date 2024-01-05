@@ -7,8 +7,8 @@ import static org.mockito.Mockito.*;
 
 
 class SalarieCdiTest {
-
-   private SalarieCdi salarieCdi;
+    private SalarieCdi salarieCdi;
+    private double heures = 170;
     Adresse adresseMock;
 
    @BeforeEach
@@ -23,9 +23,8 @@ class SalarieCdiTest {
        when(salarieMock.getIdentite()).thenReturn(identiteMock);
 
       Salaire salaireMock = mock(Salaire.class);
-       when(salaireMock.payer(170)).thenReturn(2793.32);
+       when(salaireMock.payer(heures)).thenReturn(2793.32);
        when(salaireMock.getTauxHoraire()).thenReturn(16.00);
-
 
        salarieCdi = new SalarieCdi(
                salaireMock,
@@ -45,7 +44,7 @@ class SalarieCdiTest {
 
     @Test
     public void testTravailler() {
-        String result = salarieCdi.travailler(170);
+        String result = salarieCdi.travailler(heures);
 
         assertEquals(
                 "Le salarié Jean Dupont a travaillé 170.0 heures et a perçu 2793.32 euros.", result
