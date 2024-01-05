@@ -16,7 +16,7 @@ _Libre à vous d'utiliser les auto-mocks ou les mocks manuels !_
 
 &nbsp;
 #### Diagramme de classe
-```puml
+```plantuml
 @startuml
 
 class Salaire {
