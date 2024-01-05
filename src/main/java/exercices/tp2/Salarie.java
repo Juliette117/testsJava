@@ -28,7 +28,7 @@ public abstract class Salarie {
     }
 
     /**
-     * Affiche la phrase 'Le salarié Jean Dupont a travaillé X heures et a perçu Y euros' dans la console
+     * Retourne la phrase 'Le salarié Jean Dupont a travaillé X heures et a perçu Y euros'
      *
      * @param heures
      * @return
@@ -38,6 +38,10 @@ public abstract class Salarie {
         return  "Le salarié " + this.identite.getPrenom() + " " + this.identite.getNom() + " a travaillé " + heures + " heures " + "et a perçu " + this.salaire.payer(heures) + " euros.";
     }
 
+    /**
+     * Affiche la phrase 'Le salarié Jean Dupont a travaillé X heures et a perçu Y euros' dans la console
+     * @param heures
+     */
     public void travailler(double heures) {
         double salaire = this.salaire.payer(heures);
         System.out.println(

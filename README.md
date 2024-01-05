@@ -17,7 +17,6 @@ _Libre à vous d'utiliser les auto-mocks ou les mocks manuels !_
 &nbsp;
 #### Diagramme de classe
 ```puml
-<!--
 @startuml 
 
 class Salaire {
@@ -56,7 +55,6 @@ Salarie o-- Salaire
 Identite o-- Adresse
 
 @enduml
--->
 
 ```
 

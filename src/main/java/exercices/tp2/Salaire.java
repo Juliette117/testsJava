@@ -21,6 +21,28 @@ public class Salaire {
 
     }
 
+    public double payer(double heures) {
+        if (heures < HEURES_TRAVAILLEES_NORMALES) {
+            return calculerSalaire(heures);
+        }
+
+        return calculerSalaireHeuresSupp(heures)
+                + calculerSalaireHeuresSupp(HEURES_TRAVAILLEES_NORMALES);
+    }
+
+    private double calculerSalaireHeuresSupp(double nombresHeures) {
+        double heuresSupplementaires = nombresHeures - HEURES_TRAVAILLEES_NORMALES;
+        return (double) Math.round(heuresSupplementaires * tauxHoraire * 1.25 * 100) / 100;
+    }
+
+    private double calculerSalaire(double nombresHeures) {
+        return (double) Math.round(tauxHoraire * nombresHeures * 100) / 100;
+    }
+
+    public double payer() {
+        return this.calculerSalaire(HEURES_TRAVAILLEES_NORMALES);
+    }
+
 
 
 
@@ -29,7 +51,7 @@ public class Salaire {
      * @param heures
      * @return double - Salaire
      */
-    public double payer(double heures) {
+    /*public double payer(double heures) {
         double salaire;
         if (heures > HEURES_TRAVAILLEES_NORMALES) {
             double heuresSupplementaires = heures - HEURES_TRAVAILLEES_NORMALES;
@@ -39,10 +61,10 @@ public class Salaire {
         }
         return salaire;
 
-         /*public double payer() {
+         public double payer() {
 
         return this.payer(151.67);
-    }*/
-
     }
+
+    }*/
 }
