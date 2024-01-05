@@ -6,7 +6,9 @@ public class Salaire {
     private double tauxHoraire;
 
 
+
     public Salaire(double tauxHoraire) {
+
         this.tauxHoraire = tauxHoraire;
     }
 
@@ -16,31 +18,23 @@ public class Salaire {
 
     public void setTauxHoraire(double tauxHoraire) {
         this.tauxHoraire = tauxHoraire;
+
     }
 
     /**
      * Salaire en fonction des heures travaillées dans le mois
      * @param heures
-     * @return double
+     * @return double - Salaire
      */
     public double payer(double heures) {
-        return calculerSalaire(heures);
-    }
-
-    /**
-     * Calcule le salaire en fonction des heures supplémentaires travaillés dans le mois
-     *
-     * @return double
-     */
-    double calculerSalaire(double heuresSupplementaire) {
-        if (heuresSupplementaire > HEURES_TRAVAILLEES) {
-            double salaire = 0;
-            salaire += HEURES_TRAVAILLEES * this.tauxHoraire;
-            salaire += (heuresSupplementaire - HEURES_TRAVAILLEES) * this.tauxHoraire * 0.25;
-
-            return salaire;
+        double salaire;
+        if (heures > HEURES_TRAVAILLEES) {
+            double heureSupplementaires = heures - HEURES_TRAVAILLEES;
+            salaire = ((heureSupplementaires * (tauxHoraire * 1.25)) + (HEURES_TRAVAILLEES * tauxHoraire));
         } else {
-            return heuresSupplementaire * this.tauxHoraire;
+            salaire = heures * tauxHoraire;
         }
+        return salaire;
+
     }
 }
