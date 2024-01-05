@@ -16,8 +16,8 @@ _Libre à vous d'utiliser les auto-mocks ou les mocks manuels !_
 
 &nbsp;
 #### Diagramme de classe
-```plantuml
-@startuml
+```puml
+@startuml diagram
 
 class Salaire {
   +tauxHoraire
@@ -57,6 +57,7 @@ Identite o-- Adresse
 @enduml
 
 ```
+![](diagram.svg)
 &nbsp;
 #### Organisation du code 
 Le package tp2 dans 'main/java/exercices/tp2' contient les classes:
