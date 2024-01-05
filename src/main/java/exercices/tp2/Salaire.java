@@ -2,7 +2,7 @@ package exercices.tp2;
 
 public class Salaire {
 
-    private static final double HEURES_TRAVAILLEES = 151.67;
+    private static final double HEURES_TRAVAILLEES_NORMALES = 151.67;
     private double tauxHoraire;
 
 
@@ -21,6 +21,9 @@ public class Salaire {
 
     }
 
+
+
+
     /**
      * Salaire en fonction des heures travaillées dans le mois
      * @param heures
@@ -28,13 +31,18 @@ public class Salaire {
      */
     public double payer(double heures) {
         double salaire;
-        if (heures > HEURES_TRAVAILLEES) {
-            double heureSupplementaires = heures - HEURES_TRAVAILLEES;
-            salaire = ((heureSupplementaires * (tauxHoraire * 1.25)) + (HEURES_TRAVAILLEES * tauxHoraire));
+        if (heures > HEURES_TRAVAILLEES_NORMALES) {
+            double heuresSupplementaires = heures - HEURES_TRAVAILLEES_NORMALES;
+            salaire = ((heuresSupplementaires * (tauxHoraire * 1.25)) + (HEURES_TRAVAILLEES_NORMALES * tauxHoraire));
         } else {
             salaire = heures * tauxHoraire;
         }
         return salaire;
+
+         /*public double payer() {
+
+        return this.payer(151.67);
+    }*/
 
     }
 }
