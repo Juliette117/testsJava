@@ -4,7 +4,7 @@ Exercices pour pratiquer les tests
 &nbsp;
 ### README TP 2
 Exercice pour apprendre à utiliser les mocks\
-C'est pas fini :scream_cat:
+C'est pas fini :scream_cat: :hankey: :coffee: :octopus:
 
 &nbsp;
 #### Consignes ⚙️
