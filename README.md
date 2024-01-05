@@ -87,11 +87,11 @@ _Pour effectuer le lancement des tests :_\
 _- Clic droit sur le package tp2 qui se situe dans 'main/java/exercices/tp2'_\
 _- Sélectionner 'Run 'Test in 'exercices/tp2"' ou le raccourcis "Ctrl + Alt + F5"_
 
-_Pour lancer les tests avec coverage :_\
+_Pour lancer les tests avec le coverage :_\
 _- Clic droit sur le package tp2 qui se situe dans 'main/java/exercices/tp2'_\
 _- Sélectionner 'More Run/Debug' > 'Run 'Test in 'exercices/tp2" with Coverage'_
 
-_Il n'y a rien à tester dans la classe 'Adresse' et 'Indentite', il n'y a pas de logique_
+_Il n'y a rien à tester dans la classe 'Adresse'._
 
 
 
