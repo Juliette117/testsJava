@@ -59,7 +59,7 @@ public abstract class Salarie {
      * @return
      */
     public void augmenter(double pourcentage) {
-        this.salaire.setTauxHoraire(this.salaire.getTauxHoraire() * (1 + (pourcentage/100.0)));
+        this.salaire.setTauxHoraire(this.salaire.getTauxHoraire() * (pourcentage/10.0));
 
 
     }
