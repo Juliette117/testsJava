@@ -40,6 +40,13 @@ public abstract class Salarie {
         return  "Le salarié " + this.identite.getPrenom() + " " + this.identite.getNom() + " a travaillé " + heures + " heures " + "et a perçu " + this.salaire.payer(heures) + " euros.";
     }
 
+    /** Méthode travailler() sans paramètres
+     *
+     */
+    public void travailler() {
+        this.travailler(151.67);
+    }
+
     /**
      * Le salarié déménage
      *
@@ -57,7 +64,7 @@ public abstract class Salarie {
      * @return
      */
     public void augmenter(double pourcentage) {
-        this.salaire.setTauxHoraire(this.salaire.getTauxHoraire() * (pourcentage/10.0));
+        this.salaire.setTauxHoraire(this.salaire.getTauxHoraire() * (pourcentage/100));
 
 
     }
