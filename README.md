@@ -80,7 +80,7 @@ Le TP a été réalisé à l'aide de JUnit 5 pour passer les tests unitaires et 
 La gestion des dépendances se fait à l'aide de Maven.
 
 &nbsp;
-#### Lancement des tests
+#### Lancement des tests :man_scientist:
 
 _Pour effectuer le lancement des tests :_\
 _- Clic droit sur le package tp2 qui se situe dans 'main/java/exercices/tp2'_\
